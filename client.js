@@ -20,6 +20,11 @@ const connect = function() {
     conn.write(`Name: ${name}`);
   });
 
+  const say = process.argv[3];
+  if (say) {
+    conn.write(`"say: ${say}"`);
+  }
+
   return conn;
 };
 
