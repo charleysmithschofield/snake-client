@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/charleysmithschofield/snake-client.git"
   },
-  "author": "",
+  "author": "@charleysmithschofield",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/charleysmithschofield/snake-client"
