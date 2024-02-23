@@ -50,7 +50,7 @@ This is simply a multiplayer take on the genre.
 
 - Follow steps inside the snek server repo to run the server side
 
-### Start the Client Side:
+### Starting the Client Side:
   
 - Start the game by running the play.js file with your own initials, like so:
       
