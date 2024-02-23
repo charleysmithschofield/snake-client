@@ -21,8 +21,19 @@ const connect = function () {
     // set the name
     const name = process.argv[2];
 
+    // Send the name of each snake as soon as the connection is established
     conn.write(`"Name: ${name}"`);
+
+    // // Send the "Move: up" command every 50 ms
+    // setInterval(() => {
+    //   conn.write("Move: up");
+    // }, 50);
+    // // Add these soon
+    // conn.write("Move: down"); // unless facing up
+    // conn.write("Move: left"); // unless facing right
+    // conn.write("Move: right"); // unless facing left
   });
+
   
   return conn;
 };
