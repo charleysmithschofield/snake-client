@@ -34,11 +34,11 @@ This is simply a multiplayer take on the genre.
         
   - Enter the following into your terminal:
 
-        SSH:
+    SSH:
 
         git clone git@github.com:charleysmithschofield/snake-client.git
 
-        HTTP:
+    HTTP:
 
         git clone https://github.com/charleysmithschofield/snake-client.git
 
