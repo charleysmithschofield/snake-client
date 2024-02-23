@@ -6,10 +6,25 @@ As it moves and eats, it grows and the growing snake becomes an obstacle to smoo
 
 This is simply a multiplayer take on the genre.
 
-Before you can run this client, you will need to be running the server side which you can download and install from here. 
 
 
 ## Installation
+
+### Installing the Server:
+
+ - Before you can run this client, you will need to be running the server side which you can download and install from here:
+
+        git clone https://github.com/lighthouse-labs/snek-multiplayer.git
+
+        cd snek-multiplayer
+
+        npm install
+
+        npm run play
+
+
+
+### Cloning the Snake Client Project
 
   - Copy HTTP or SSH link from this snake-client repository.
   - Make a directory to house this game on your local machine
@@ -29,10 +44,14 @@ Before you can run this client, you will need to be running the server side whic
 
 
 
-## Getting Started
+## Starting the Game:
+
+### Starting the Server:
 
 - Follow steps inside the snek server repo to run the server side
 
+### Start the Client Side:
+  
 - Start the game by running the play.js file with your own initials, like so:
       
       node play.js <your initials here>
