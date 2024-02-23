@@ -23,21 +23,27 @@ const connect = function () {
 
     // Send the name of each snake as soon as the connection is established
     conn.write(`"Name: ${name}"`);
-
-    // // Send the "Move: up" command every 50 ms
-    // setInterval(() => {
-    //   conn.write("Move: up");
-    // }, 50);
-    // // Add these soon
-    // conn.write("Move: down"); // unless facing up
-    // conn.write("Move: left"); // unless facing right
-    // conn.write("Move: right"); // unless facing left
   });
 
+  // function to set up userInput
+  const setupInput = function () {
+    const stdin = process.stdin;
+    stdin.setRawMode(true);
+    stdin.setEncoding("utf8");
+    stdin.resume();
+    stdin.on("data", handleUserInput);
+
+    // Function to handle user input
+    const handleUserInput = function (data) {
+      if (data === 'w' || data === "W") {
+        conn.write("Move: up");
+      }
+    };
+    return stdin;
+  };
   
   return conn;
 };
-
 
 console.log("Connecting ...");
 
