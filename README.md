@@ -12,7 +12,7 @@ This is simply a multiplayer take on the genre.
 
 ### Install the Server:
 
- - Before you can run this client, you will need to be running the server side which you can download and install from here:
+ - Before you can run this client, you will need to run the server side. This should be done in a separate terminal window since it will need to stay running while run the client in the main terminal window, see below:
 
         git clone https://github.com/lighthouse-labs/snek-multiplayer.git
 
