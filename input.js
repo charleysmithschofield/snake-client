@@ -15,7 +15,14 @@ const setupInput = function(conn) {
 const handleUserInput = function(data) {
   if (data === 'w' || data === "W") {
     connection.write("Move: up");
+  } else if (data === 'a' || data === "A") {
+    connection.write("Move: left");
+  } else if (data === 's' || data === "S") {
+    connection.write("Move: down");
+  } else if (data === 'd' || data === "D") {
+    connection.write("Move: right");
   }
 };
 
 module.exports = { setupInput };
+
