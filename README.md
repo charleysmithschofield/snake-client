@@ -41,6 +41,9 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Playing the Game
 
+  ### Movement:
+  Navigate your snake to eat the red dot to grow your snake. 
+  
   - Use the w, a, s, d keys to navigate the snake as per below. 
 
         'w' - moves the snake up
@@ -50,7 +53,12 @@ Before you can run this client, you will need to be running the server side whic
 
       Note: Snakes cannot change direction by 180 degrees instantaneously
 
-- Navigate your snake to eat the red dot to grow your snake. 
+ ### Say Something:
+  - Use the e, r, and f keys to have your snake say something as per below:
+
+        'r': "Say: Ready to lose?",
+        'e': "Say: Eat my dust!",
+        'f': "Say: Fear my Feasting!"
 
 
 ## Game Over
