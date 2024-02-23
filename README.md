@@ -1,1 +1,66 @@
-# snake-client
+# Snake Client Project
+
+Snake game is a very popular video game. It is a video game concept where the player maneuvers a dot and grows it by ‘eating’ pieces of food. 
+
+As it moves and eats, it grows and the growing snake becomes an obstacle to smooth maneuvers. The goal is to grow it to become as big as possible without bumping into the side walls, or bumping into itself, upon which it dies.
+
+This is simply a multiplayer take on the genre.
+
+Before you can run this client, you will need to be running the server side which you can download and install from here. 
+
+
+## Installation
+
+
+
+
+## Getting Started
+
+- Follow steps inside the snek server repo to run the server side
+
+- Start the game by running the play.js file with your own initials, like so:
+      
+      node play.js <your initials here>
+
+    If playing multiplayer, repeat the step above for the second player. Ensure you do this in a second terminal and with the second player's initials.
+
+## Playing the Game
+
+  - Use the w, a, s, d keys to navigate the snake as per below. 
+
+        'w' - moves the snake up
+        'd' - moves the snake right
+        's' - moves the snake down
+        'a' - moves the snake left
+
+      Note: Snakes cannot change direction by 180 degrees instantaneously
+
+- Navigate your snake to eat the red dot to grow your snake. 
+
+
+## Game Over
+
+  Game over will occur if:
+
+  - Your snakes idle for too long, you will get the this message:
+
+        "you ded cuz you idled"
+
+  - Your snakes collide with the wall, you will get this message:
+
+        "you crashed, so you ded"
+
+  - Your snakes collide with their own tails, you will get this message:
+
+        "you crashed, so you ded"
+
+  - Your snakes collide with each other, you will get this message:
+
+        "you hit another snake, so you ded"
+
+
+## Exit the Game:
+To exit the game press:
+
+          CTRL + C
+
