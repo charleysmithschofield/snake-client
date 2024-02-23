@@ -2,19 +2,7 @@
 // This will hold the connection object
 let connection;
 
-// sets up the user input
-const setupInput = function(conn) {
-  // Store the connection object passed to setupInput
-  connection = conn;
-  const stdin = process.stdin;
-  stdin.setRawMode(true);
-  stdin.setEncoding("utf8");
-  stdin.resume();
-  stdin.on("data", handleUserInput);
-
-  return stdin;
-};
-
+// declaring move object
 const move = {
   'w': 'Move: up',
   'a': 'Move: left',
@@ -22,6 +10,7 @@ const move = {
   's': 'Move: down'
 };
 
+// declaring say object
 const say = {
   'r': "Say: Hissss",
   'e': "Say: Can't beat me!",
@@ -40,5 +29,16 @@ const handleUserInput = function(data) {
   }
 };
 
+// sets up the user input
+const setupInput = function(conn) {
+  // Store the connection object passed to setupInput
+  connection = conn;
+  const stdin = process.stdin;
+  stdin.setRawMode(true);
+  stdin.setEncoding("utf8");
+  stdin.resume();
+  stdin.on("data", handleUserInput);
+  return stdin;
+};
 // exports the setupInput file
 module.exports = { setupInput };
