@@ -1,4 +1,8 @@
-const connect = require('./client');
+// play.js
+const { connect } = require("./client");
+const { setupInput } = require("./input");
 
-// Call the connect function to establish the connection
-connect();
+console.log("Connecting ...");
+const conn = connect();
+
+setupInput(conn);
