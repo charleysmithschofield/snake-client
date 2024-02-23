@@ -2,14 +2,17 @@
 const { connect } = require("./client");
 const { setupInput } = require("./input");
 
+// logs Connecting.. when the connection is being established
 console.log("Connecting ...");
 const conn = connect();
 
 setupInput(conn);
 
-// Handle CTRL+C (SIGINT signal)
+// Enter the process to allow users exit using CTRL + C
 process.on('SIGINT', () => {
-  console.log("Exiting gracefully...");
-  conn.end(); // Close the connection
-  process.exit(0); // Exit the process with a successful status code
+  console.log("Exiting...");
+  // Ends the connection
+  conn.end();
+  // Exit the process
+  process.exit(0);
 });
