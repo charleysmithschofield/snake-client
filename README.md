@@ -77,5 +77,5 @@ Before you can run this client, you will need to be running the server side whic
 ## Exit the Game:
 To exit the game press:
 
-          CTRL + C
+     CTRL + C
 
