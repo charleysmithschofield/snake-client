@@ -10,7 +10,7 @@ This is simply a multiplayer take on the genre.
 
 ## Installation
 
-### Installing the Server:
+### Install the Server:
 
  - Before you can run this client, you will need to be running the server side which you can download and install from here:
 
@@ -24,10 +24,10 @@ This is simply a multiplayer take on the genre.
 
 
 
-### Cloning the Snake Client Project
+### Clone the Snake Client Project
 
   - Copy HTTP or SSH link from this snake-client repository.
-  - Make a directory to house this game on your local machine
+  - Make a directory to house the client side of this game on your local machine
 
         touch <directory name>
         cd <directory name>
@@ -44,13 +44,13 @@ This is simply a multiplayer take on the genre.
 
 
 
-## Starting the Game:
+## Start the Game:
 
-### Starting the Server:
+### Start the Server:
 
 - Follow steps inside the snek server repo to run the server side
 
-### Starting the Client Side:
+### Start the Client Side:
   
 - Start the game by running the play.js file with your own initials, like so:
       
@@ -58,7 +58,7 @@ This is simply a multiplayer take on the genre.
 
     If playing multiplayer, repeat the step above for the second player. Ensure you do this in a second terminal and with the second player's initials.
 
-## Playing the Game
+## Play the Game
 
   ### Movement:
   Navigate your snake to eat the red dot to grow your snake. 
