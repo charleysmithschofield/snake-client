@@ -48,7 +48,7 @@ This is simply a multiplayer take on the genre.
 
 ### Start the Server:
 
-- Follow steps inside the snek server repo to run the server side
+- Follow steps inside the snek server repo to run the server side.
 
 ### Start the Client Side:
   
