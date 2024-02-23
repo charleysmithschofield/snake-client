@@ -6,3 +6,10 @@ console.log("Connecting ...");
 const conn = connect();
 
 setupInput(conn);
+
+// Handle CTRL+C (SIGINT signal)
+process.on('SIGINT', () => {
+  console.log("Exiting gracefully...");
+  conn.end(); // Close the connection
+  process.exit(0); // Exit the process with a successful status code
+});
