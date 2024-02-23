@@ -1,1 +1,19 @@
-{}
+{
+  "name": "snake-client",
+  "description": "Snake game is a very popular video game. It is a video game concept where the player maneuvers a dot and grows it by ‘eating’ pieces of food.",
+  "version": "1.0.0",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charleysmithschofield/snake-client.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charleysmithschofield/snake-client"
+  },
+  "homepage": "https://github.com/charleysmithschofield/snake-client#readme"
+}
