@@ -10,7 +10,6 @@ const connect = function () {
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
-  
   // handle incoming data and log it for the player
   conn.on("data", (data) => {
     console.log(`"Received data", ${data}`);
@@ -18,13 +17,19 @@ const connect = function () {
 
   // handle connection established
   conn.on("connect", () => {
-    console.log("Connected to game server");
+    console.log("Successfully connected to game server");
+    // set the name
+    const name = process.argv[2];
+
+    conn.write(`"Name: ${name}"`);
   });
   
   return conn;
 };
 
+
 console.log("Connecting ...");
-connect();
 
 module.exports = connect;
+
+
