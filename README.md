@@ -11,6 +11,21 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Installation
 
+  - Copy HTTP or SSH link from this snake-client repository.
+  - Make a directory to house this game on your local machine
+
+        touch <directory name>
+        cd <directory name>
+        
+  - Enter the following into your terminal:
+
+        SSH:
+
+        git clone git@github.com:charleysmithschofield/snake-client.git
+
+        HTTP:
+
+        git clone https://github.com/charleysmithschofield/snake-client.git
 
 
 
